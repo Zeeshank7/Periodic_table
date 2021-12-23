@@ -1,0 +1,275 @@
+body{
+    background: #365c61;
+    /* background: #09363b; */
+    font-family: "Poppins",sans-serif;
+    margin: 100px;
+    
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    /* color: #9b8643; */
+    color: #11202c;
+}
+a{
+    text-decoration: none;
+}
+.line1{
+    border: 1px solid #202e38;
+    width: 100px;
+    display: block;
+    position: relative;
+    left: 240px;    
+    bottom: 14px; 
+}
+.line2{
+    border: 1px solid #202e38;
+    width: 140px;
+    display: block;
+    position: relative;
+    left: 240px;
+    bottom: 15px;
+}
+.line3{
+    border: 1px solid #202e38;
+    width: 150px;
+    display: block;
+    position: relative;
+    left: 240px;
+    bottom: 20px;
+}
+.line4{
+    border: 1px solid #202e38;
+    width: 180px;
+    display: block;
+    position: relative;
+    right: 185px;
+    bottom: 40px;
+}
+.flex-b{
+    display: flex;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    background: linear-gradient(to bottom right,#584e4d 0%, #d6cabb 100%);
+    height: 250px;
+    width: 1500px;
+    margin: 10px;
+    margin-left: 160px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.sec1{
+    text-align: right;
+    color: #202e38;
+    font-size: 32px;
+}
+.sec2-inner{
+    background: linear-gradient(to bottom right,#f3f9a6 0%, #cbc634 100%);
+    width: 150px;
+    height: 140px;
+    border-top: 30px solid #c4c04d;
+    border-left: 1px solid #c4c04d;
+    border-right: 30px solid #a5a014;
+    border-bottom: 1px solid #a5a014;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.sec2-inner-item{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 38px;
+    text-align: center;
+    color: #202e38;
+}
+.sec3{
+    text-align: left;
+    justify-content: space-between;
+    color: #202e38;
+}
+.sec4{
+    margin: 10px;
+    color: #202e38;
+    
+}
+.sec6{
+    /* background: #5a88e5; */
+    width: 120px;
+    height: 90px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 38px;
+    text-align: center;
+    color: #202e38;
+}
+.box-1{
+    background: linear-gradient(to bottom right,#37cfdc 0%, #5a88e5 100%);
+    width: 150px;
+    height: 39px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+    border-right: 4px solid black;
+    margin: 1px;
+    color: #202e38;
+}
+.box-2{
+    background: linear-gradient(to bottom right,#58ac30 0%, #a7df62 100%);
+    width: 150px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+    border-right: 4px solid black;
+    margin: 1px;
+    color: #202e38;
+}
+.box-3{
+    background: linear-gradient(to bottom right,#f3f9a6 0%, #cbc634 100%);
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+    border-right: 4px solid black;
+    margin: 1px;
+    color: #202e38;
+}
+.box-4{
+    background: linear-gradient(to bottom right, #fa7f72 0%, #fcc57d 100%);
+    width: 150px;
+    height: 59px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    margin: 1px;
+    color: #202e38;
+}
+
+.periodic-table{
+    display: grid;
+    grid-template-columns: repeat(18, 100px);
+    grid-template-rows: repeat(9, 100px);
+    gap: 10px;
+    margin: auto;
+    max-width: 1200px;
+    justify-content: center;
+}
+.periodic-element{
+    padding: 4px;
+    position: relative;
+    z-index: 1;
+    cursor: default;
+    transition: all 0.3 ease;
+}
+.periodic-element .periodic-element-inner{
+    background: #202e38;
+    padding: 10px 15px;
+    width: calc(100%-30px);
+    height: calc(100% - 20px);
+    transition: inherit;
+}
+.periodic-element .title{
+    font: 700 26.1538px "Popins",sans-serif;
+    margin: 0.3em 0 0;
+    transition: 0.8s ease 600ms;
+
+}
+.periodic-element .desc{
+    font: 500 12px"Popins",sans-serif;
+    margin-top: -0.2em;
+}
+.periodic-element:hover{
+    transform: scale(1.12);
+    z-index: 10;
+}
+.periodic-element:hover .periodic-element-inner{
+    background: transparent;   
+}
+.periodic-element:hover .title, .periodic-element:hover{
+    -webkit-text-fill-color: #222;
+}
+.periodic-element:hover::after{
+    top: 105%;
+    opacity: 1;
+}
+.periodic-element{
+    cursor: pointer;
+}
+.one{
+    background: linear-gradient(to bottom right,#f3f9a6 0%, #cbc634 100%);
+}
+.one .title, .one desc{
+    background: -webkit-linear-gradient(#f3f9a6,#cbc634);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.two{
+    background: linear-gradient(to bottom right,#58ac30 0%, #a7df62 100%);
+}
+.two .title, .two desc{
+    background: -webkit-linear-gradient(#58ac30,#a7df62);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.three{
+    background: linear-gradient(to bottom right,#37cfdc 0%, #5a88e5 100%);
+}
+.three .title, .three desc{
+    background: -webkit-linear-gradient(#37cfdc,#5a88e5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.four{
+    background: linear-gradient(to bottom right, #fa7f72 0%, #fcc57d 100%);
+}
+.four .title, .four desc{
+    background: -webkit-linear-gradient(#fa7f72, #fcc57d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.five{
+    background: linear-gradient(to bottom right, #584e4d 0%, #d6cabb 100%);
+}
+.five .title, .five desc{
+    background: -webkit-linear-gradient(#584e4d, #d6cabb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.empty-space-1{
+    grid-column: 2/span 16;
+    grid-row: 1;
+}
+ .empty-space-2{
+    grid-column: 3/span 10;
+    grid-row: 2;
+} 
+.empty-space-3{
+    grid-column: 3/span 10;
+    grid-row: 3;
+}
+.empty-space-4{
+    grid-column: 1/span 2;
+    grid-row: 8;
+}
+.empty-space-6{
+    grid-column: 1/span 2;
+    grid-row: 9;
+}
+.empty-space-5{
+    grid-column: 18/span 1;
+    grid-row: 8/span 2;
+} 
